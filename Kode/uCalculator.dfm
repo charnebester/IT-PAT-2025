@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 472
-  ClientWidth = 759
+  ClientHeight = 534
+  ClientWidth = 800
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,16 +15,16 @@ object Form1: TForm1
   object pgcMain: TPageControl
     Left = 0
     Top = 0
-    Width = 759
-    Height = 472
-    ActivePage = TabSheet2
+    Width = 800
+    Height = 534
+    ActivePage = tsCalc
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 757
-    ExplicitHeight = 464
-    object TabSheet1: TTabSheet
+    ExplicitWidth = 759
+    ExplicitHeight = 472
+    object tsHistory: TTabSheet
       Caption = 'History'
-      object Label2: TLabel
+      object lblInfo: TLabel
         Left = 284
         Top = 10
         Width = 157
@@ -58,13 +58,22 @@ object Form1: TForm1
         Height = 25
         Caption = 'Gaan na Calculator'
         TabOrder = 1
-        OnClick = Button1Click
+        OnClick = btnGaanNaCalc
+      end
+      object btnClearHistory: TButton
+        Left = 300
+        Top = 464
+        Width = 129
+        Height = 25
+        Caption = 'ClearHistory'
+        TabOrder = 2
+        OnClick = btnClearHistoryClick
       end
     end
-    object TabSheet2: TTabSheet
+    object tsCalc: TTabSheet
       Caption = 'Calc'
       ImageIndex = 1
-      object Label1: TLabel
+      object lblSom: TLabel
         Left = 216
         Top = 96
         Width = 7
@@ -76,7 +85,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
       end
-      object Label3: TLabel
+      object lblVriendelikeDiagloog: TLabel
         Left = 208
         Top = 3
         Width = 262
@@ -232,7 +241,7 @@ object Form1: TForm1
         Height = 25
         Caption = 'Gaan na History'
         TabOrder = 15
-        OnClick = btnNewTClick
+        OnClick = btnGaanNaHistory
       end
       object btnMod: TButton
         Left = 378
@@ -250,7 +259,7 @@ object Form1: TForm1
         Height = 25
         Caption = 'Help'
         TabOrder = 17
-        OnClick = Button2Click
+        OnClick = btnHelp
       end
     end
   end
