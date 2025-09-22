@@ -1,4 +1,4 @@
-program Calculator;
+program pCalculator;
 
 uses
   Vcl.Forms,

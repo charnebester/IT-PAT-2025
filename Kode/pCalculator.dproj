@@ -9,7 +9,7 @@
         <ProjectName Condition="'$(ProjectName)'==''">pCalculator</ProjectName>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
-        <MainSource>Calculator.dpr</MainSource>
+        <MainSource>pCalculator.dpr</MainSource>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -144,7 +144,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">Calculator.dpr</Source>
+                    <Source Name="MainSource">pCalculator.dpr</Source>
                 </Source>
             </Delphi.Personality>
             <Deployment Version="4">
